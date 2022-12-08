@@ -1,0 +1,109 @@
+*{
+  box-sizing : border-box;
+}
+
+body {
+  margin: 0;
+  padding : 0;
+}
+
+main {
+  width : 100%;
+  text-align : center;
+  background-image : url("./images/sunny day.jpeg");
+  background-repeat : no-repeat;
+  background-size :cover;
+  height : 100vh;
+}
+
+main.cold{
+  background-image : url("./images/cold background.jpeg")
+}
+
+.search {
+   text-align : center;
+   padding-top : 40px;
+}
+
+.search-bar {
+    width : 500px;
+    max-width : 90%;
+    height : 40px;
+    outline : none;
+    border : none;
+    border-radius : 10px;
+    background : whitesmoke;
+    font-size : 17px;
+    padding : 15px;
+    color : black;
+    transition : all 0.5s;
+    margin-bottom : 50px;
+}
+
+.search-bar:focus{
+   border-radius : 20px;
+   background :darkgrey;
+   color : black;
+}
+
+.place{
+  font-size : 70px;
+  color : burlywood;
+  font-weight : 700;
+  margin : 0;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, .9);
+}
+
+.date {
+  color :rgba(254, 253, 255, 0.8);
+  font-weight : 600;
+  font-size : 3rem;
+  margin : 30px 0;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, .9);
+}
+
+.time{
+   font-size : 3rem;
+   color :rgba(0, 0, 0, .8);
+   margin : 30px 0;
+   font-weight : 800;
+}
+
+.temp-container{
+  width : 190px;
+  height : 120px;
+  background :rgba(128, 128, 128, 0.438);
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  flex : 1;
+  margin : 0 auto;
+  margin-bottom : 30px;
+  box-shadow : 3px 7px rgba(0, 0, 0, 0.75);
+  border-radius : 20px;
+}
+
+.temp{
+ color : rgba(120, 36, 0, 0.8);
+ font-size : 60px;
+ font-weight : 900;
+}
+
+.weather {
+  font-size : 40px;
+  font-weight : 700;
+  font-style : italic;
+  color : rgba(0, 0, 0, .8);
+  text-shadow : 1px 3px  2px rgba(0, 0, 0, 0.2);
+  text-transform:uppercase ;
+  letter-spacing: 3px;
+}
+
+@media(max-width : 500px){
+  .place{
+    font-size : 3.5rem;
+  }
+  .date{
+    font-size : 2rem;
+  }
+}
